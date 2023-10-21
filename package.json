@@ -1,0 +1,23 @@
+{
+  "name": "color-manipulation-library",
+  "version": "1.0.0",
+  "description": "A simple Node.js library for converting between different color formats and applying color adjustments and filters.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "color",
+    "manipulation",
+    "hex",
+    "rgb",
+    "hsl",
+    "brightness",
+    "filter"
+  ],
+  "author": "Alex Reed",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
