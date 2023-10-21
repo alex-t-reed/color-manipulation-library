@@ -10,9 +10,14 @@ const {
 } = require('../colorManipulationLibrary');
 
 describe('Color Manipulation Library Tests', () => {
-    test('Hex to RGB conversion', async () => {
+    test('6 character Hex to RGB conversion', async () => {
         const result = await hexToRgb('#ff0000');
         expect(result).toEqual({ r: 255, g: 0, b: 0 });
+    });
+
+    test('3 character Hex to RGB conversion', async () => {
+        const result = await hexToRgb('#f06');
+        expect(result).toEqual({ r: 255, g: 0, b: 102 });
     });
 
     test('RGB to Hex conversion', async () => {
