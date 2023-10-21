@@ -14,7 +14,7 @@ npm install color-manipulation-library
 
 ### `hexToRgb(hex)`
 
-Converts a HEX color code to RGB values.
+Converts a HEX color code to RGB values. Can be 3 character of 6 character hex.
 
 - **Parameters:**
   - `hex` (string): The HEX color code to convert.
