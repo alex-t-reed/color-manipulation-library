@@ -7,12 +7,20 @@ async function hexToRgb(hex) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             let parsedHex = hex.replace(/^#/, '');
-            if (!/^(?:[0-9a-fA-F]{3}){1,2}$/.test(parsedHex)) {
+
+            // Handle 3-character hex codes
+            if (parsedHex.length === 3) {
+                parsedHex = parsedHex[0] + parsedHex[0] + parsedHex[1] + parsedHex[1] + parsedHex[2] + parsedHex[2];
+            }
+
+            if (!/^(?:[0-9a-fA-F]{6})$/.test(parsedHex)) {
                 reject(new InvalidColorFormatError('Invalid HEX color format'));
             }
+
             let r = parseInt(parsedHex.substring(0, 2), 16);
             let g = parseInt(parsedHex.substring(2, 4), 16);
             let b = parseInt(parsedHex.substring(4, 6), 16);
+
             resolve({ r, g, b });
         }, 200);
     });
