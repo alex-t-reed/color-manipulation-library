@@ -1,5 +1,7 @@
 # Color Manipulation Library
 
+[https://www.npmjs.com/package/color-manipulation-library](https://www.npmjs.com/package/color-manipulation-library)
+
 A simple Node.js library for converting between different color formats and applying color adjustments and filters.
 
 ## Installation
