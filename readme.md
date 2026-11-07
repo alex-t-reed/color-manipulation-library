@@ -4,6 +4,10 @@
 
 A simple Node.js library for converting between different color formats and applying color adjustments and filters.
 
+## Project purpose
+
+A JavaScript learning project focused on reusable functions, numeric transformations, error handling, and Jest tests. The repository includes the CommonJS entry point `index.js`, implementation in `colorManipulationLibrary.js`, and tests in `__tests__/`.
+
 ## Installation
 
 This library can be installed via npm. Use the following command:
@@ -103,6 +107,23 @@ hexToRgb('#ff0000')
     });
 ```
 
+## Develop locally
+
+```bash
+npm install
+npm test
+```
+
+The conversion and brightness functions return Promises; use `await` or `.then()`. `clamp` is synchronous. RGB channels use 0–255 and HSL inputs use normalized 0–1 values. This is a small utility library, not a complete color-management or accessibility-contrast system.
+
 ## License
 
 This library is distributed under the MIT License.
+
+## About and contact
+
+Created by [Alex Reed](https://www.linkedin.com/in/alextreed/). Explore my [portfolio](https://alex-t-reed.github.io/) for project context and career interests. Professional inquiries are welcome through LinkedIn.
+
+## What I learned
+
+I practiced separating reusable JavaScript functions from their package entry point, documenting inputs and Promise-based results, and organizing tests. Color conversions made input ranges and error handling concrete.
